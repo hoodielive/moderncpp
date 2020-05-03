@@ -1,0 +1,3 @@
+/home/awo/Clones/dope/Cmaker/CMakeFiles/rebuild_cache.dir
+/home/awo/Clones/dope/Cmaker/CMakeFiles/edit_cache.dir
+/home/awo/Clones/dope/Cmaker/CMakeFiles/Cmaker.dir
