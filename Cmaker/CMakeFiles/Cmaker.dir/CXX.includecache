@@ -6,7 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/awo/Clones/dope/Cmaker/src/Main.cpp
+/home/awo/Clones/moderncpp/Cmaker/src/Main.cpp
 iostream
+-
+cstddef
+-
+cstdio
+-
+WorkWithTypes.h
+/home/awo/Clones/moderncpp/Cmaker/src/WorkWithTypes.h
+SizesAndStuff.h
+/home/awo/Clones/moderncpp/Cmaker/src/SizesAndStuff.h
+
+/home/awo/Clones/moderncpp/Cmaker/src/SizesAndStuff.h
+
+/home/awo/Clones/moderncpp/Cmaker/src/WorkWithTypes.h
+cstdio
 -
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/awo/Clones/dope/Cmaker
+# Install script for directory: /home/awo/Clones/moderncpp/Cmaker
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/awo/Clones/dope/Cmaker/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/awo/Clones/moderncpp/Cmaker/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

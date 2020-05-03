@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/awo/Clones/dope/Cmaker/src/Main.cpp" "/home/awo/Clones/dope/Cmaker/CMakeFiles/Cmaker.dir/src/Main.cpp.o"
+  "/home/awo/Clones/moderncpp/Cmaker/src/Main.cpp" "/home/awo/Clones/moderncpp/Cmaker/CMakeFiles/Cmaker.dir/src/Main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
