@@ -1,3 +1,3 @@
 # Modern C++
-ModernCPP explores C++ v20
+ModernCPP explores C++ v17 and v20
 
