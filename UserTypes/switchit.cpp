@@ -12,7 +12,7 @@ enum class Race {
 
 int main()
 {
-	Race race = Race::Julian;
+	Race race = Race::Oya;
 
 	switch(race) {
 		case Race::Dinan: {
