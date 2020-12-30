@@ -1,13 +1,11 @@
 #include <iostream>
 #include <array>
 
-
 int main()
 {
     const int arrSize = 5;
     int myArr[arrSize];
     int my2DArr[arrSize][arrSize];
-
 
     for(size_t i = 0; i < arrSize; i++)
     {
