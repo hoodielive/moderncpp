@@ -4,13 +4,17 @@
 
 int main()
 {
-    const int numberofelements = 3;
-    int arr[numberofelements];
-    arr[1] = 4;
+    const int arrSize = 5;
+    int myArr[arrSize];
+    int my2DArr[arrSize][arrSize];
 
-    for(size_t i = 0; i < 2; i++)
+
+    for(size_t i = 0; i < arrSize; i++)
     {
-        std::cout << i << std::endl;
+        for (size_t k = 0; k < arrSize; k++)
+        {
+            std::cout << my2DArr[i][k] << std::endl;
+        }
     }
 
     return 0;
