@@ -3,12 +3,13 @@
 
 int main()
 {
-    int myArray[3]{ 3 };
-
+    const int arraySize = 3;
+    int myArray[arraySize]{ 2 };
+    myArray[1] = 5;
     
     for(size_t i = 0; i < 3; i++)
     {
-        std::cout << myArray[2] << std::endl;
+        std::cout << i << myArray[2] << std::endl;
     }
     
     return 0;
