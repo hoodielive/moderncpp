@@ -10,7 +10,6 @@ class MyClass
     public:
         MyClass();
         const std::vector<std::string>& getMyString() const; 
-
         void add(const std::string str);
         const std::string toString() const;
 };
