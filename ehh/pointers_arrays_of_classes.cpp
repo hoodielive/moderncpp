@@ -32,7 +32,8 @@ int main()
     srand(time(NULL));
 
     Person me("Larry", 29);
-    Person frend("Vincent", 28);
+    Person frend("Jordan", 28);
+    Person frend2("Vincent", 28);
 
     Person* seat = nullptr;
 
