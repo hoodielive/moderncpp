@@ -10,8 +10,8 @@ union Variant
 int main()
 {
 	Variant v;
+
 	v.integer = 42;
-	printf("The ultimate answer: %d\n", v.integer);
-	v.floating_point = 2.7182818284;
-	printf("Euler's number e:  %f\n", v.floating_point);
+	v.floating_point = 2.71283849;
+	printf("You are now looking at euler's e: ", v.floating_point);
 }
