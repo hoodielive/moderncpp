@@ -17,6 +17,8 @@ struct Foo
 	int m_{};
 };
 
+
+
 int main()
 {
 }
