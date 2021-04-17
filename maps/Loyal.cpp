@@ -7,7 +7,7 @@ int main()
 	bool myBool = false;
 	char myChar = 'a';
 
-	int[] customersAges[5] = { 1, 2, 3, 4, 5 };
+	int customersAges[5] = { 1, 2, 3, 4, 5 };
 
 	std::cout << "The size of an int is " << sizeof(myInt) << ".\n";
 	std::cout << "The size of an bool is " << sizeof(myBool) << ".\n";
