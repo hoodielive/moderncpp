@@ -10,7 +10,7 @@ int main()
 
     for (int i = 0; i < NAME_COUNT; ++i)
     {
-        std::cout << "User " << i + 1 << ": " << std::endl; 
+        std::cout << "User " << i + 1 << ": " << std::endl;
         std::getline(std::cin, names[i]);
     }
 
