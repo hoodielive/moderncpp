@@ -18,3 +18,15 @@ using namespace std;
   If yes then the secret number should change.
   Any input errors by the player should have proper handling.
 */
+
+int main()
+{
+  /* 
+    We need a variable that stores the secret number.
+    Range: 0 -100
+    We need a variable that stores the number of guesses the player has left.
+    We need a variable that will store the player's guess.
+    Number of guesses will be the log base 2 of the upper range - e.g. log2(100) ~ 7
+    How do we change then secret number?
+  */
+}
