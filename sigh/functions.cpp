@@ -1,16 +1,18 @@
 #include <iostream>
 using namespace std;
 
-void PrintHello();
+void PrintValue(int x);
 
 int main()
 {
 
-  PrintHello();
+  int z = 50;
+  PrintValue(z);
+
   return 0;
 }
 
-void PrintHello()
+void PrintValue(int x)
 {
-  cout << "Hello, Aeon" << endl;
+  cout << "The Integer is: " << x << endl;
 }
