@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 /*
@@ -19,9 +20,7 @@ using namespace std;
   Any input errors by the player should have proper handling.
 */
 
-int main()
-{
-  /* 
+/* 
     We need a variable that stores the secret number.
     Range: 0 -100
     We need a variable that stores the number of guesses the player has left.
@@ -29,4 +28,53 @@ int main()
     Number of guesses will be the log base 2 of the upper range - e.g. log2(100) ~ 7
     How do we change then secret number?
   */
+
+/* Solve Problem.
+
+    PlayTheGame: 
+      1. Set the number to a known value.
+      2. Set the number of guesses -> ceil(log2(100))
+
+    do
+    {
+      3. Prompt user to make a guess (output the number of guesses left.)
+      4. Get the guess from player.
+      5. Check to see if the guess is equal to the secret number.
+        5a. If the guess is equal to the secret number.
+          5a1. Decrement the numbe of guesses left.
+          5a2. Check to see if the guess was higher or lower than the secret number.
+            5a2a. If it was higher - print that the guess was too high.
+            5a2b. If the guess was lower - print that the guess was too low.
+
+    } while (the game is not over)
+
+    Display the result - tell the player if he got it or not.
+
+    Functions:
+      Play the game -> PlayGame()
+      Want to play again -> WantToPlayAgain()
+      Get The Guess from the player -> GetGuess()
+
+      The game is not over -> IsGameOver()
+        number of guesses left == 0 || player's guess == secret number
+
+      Display results -> DisplayResults()
+
+      if (the player got it)
+      {
+        print that they got it and print the secret number.
+      }
+      else
+      {
+        print that they didn't get it and print the secret number.
+      }
+ */
+
+void PlayGame();
+bool WantToPlayAgain();
+
+int main()
+{
+
+  return 0;
 }
