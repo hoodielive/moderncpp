@@ -29,7 +29,7 @@ using namespace std;
     How do we change then secret number?
   */
 
-/* Solve Problem.
+/* TODO: Solve Problem.
 
     PlayTheGame: 
       1. Set the number to a known value.
@@ -72,9 +72,73 @@ using namespace std;
 
 void PlayGame();
 bool WantToPlayAgain();
+bool IsGameOver(int secretNumber, int numberofTries, int guess);
 
 int main()
 {
 
   return 0;
 }
+
+void PlayGame()
+{
+  const int UPPER_BOUND{100};
+  int secretNumber = 65;
+  int numberOfTries = ceil(log2(UPPER_BOUND));
+  int guess = 0;
+
+  do
+  {
+    guess = GetGuess(numberOfTries);
+    if (guess != secretNumber)
+    {
+      numberOfTries--;
+
+      if (guess > secretNumber)
+      {
+        cout << "Your was too high." << endl;
+      }
+      else
+      {
+        cout << "Your guess was too low." << endl;
+      }
+    }
+  } while (!IsGameOver(secretNumber, numberOfTries, guess));
+
+  DisplayResult();
+};
+
+bool WantToPlayGame()
+{
+  // TODO: implement
+  return false;
+};
+
+bool IsGameOver(int secretNumber, int numberofTries, int guess)
+{
+  return secretNumber == guess || numberofTries <= 0;
+};
+
+int GetGuess(int numberOfTries)
+{
+  const int IGNORE_CHARS = 256;
+  int guess;
+  bool failure;
+
+  do
+  {
+    failure = false;
+
+    cout << "Please enter your guess (number of guess left: " << numberOfTries << "): ";
+    cin >> guess;
+
+    if (cin.fail())
+    {
+      cin.clear();
+      cin.ignore(IGNORE_CHARS, '\n');
+      cout << "Input Error! Please try again." << endl;
+      failure = true;
+    }
+  } while (failure);
+  return guess;
+};
