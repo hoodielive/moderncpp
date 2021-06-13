@@ -1,0 +1,42 @@
+#+TITLE: Implementation of Pointers
+
+
+* This is a blurb
+#+begin_src cpp
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+
+    char c = 'a';
+    char* p = &c;
+    char d = *p; // Derefence the pointer (return value)
+
+    std::cout << "Assane: " << d << std::endl;
+
+    std::cout << "The value of the deferenced pointers is: " << *p;
+}
+
+#+end_src
+
+#+RESULTS:
+| Assane: | a     |    |     |            |          |     |   |
+| The     | value | of | the | deferenced | pointers | is: | a |
+
+* Second Test.
+#+begin_src cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 123;
+    int* p = &x;
+
+    std::cout << "The value of the dereferenced pointer is: " << *p;
+}
+
+#+end_src
