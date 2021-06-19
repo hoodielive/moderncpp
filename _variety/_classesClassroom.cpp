@@ -13,6 +13,11 @@ class MyClass
     }
 };
 
+void MyNewClass()
+{
+    std::cout << "This is the message, that I have for you" << std::endl;
+}
+
 void MyClass::doSomething()
 {
   std::cout << "Hello World from a class.";
