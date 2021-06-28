@@ -73,6 +73,21 @@ class AgoCopyConstructor
     }
 };
 
+class ADeepCopy
+{
+    private:
+        int x;
+        int* p;
+
+    public:
+      ADeepCopy(int xx, int pp) : x { xx }, p { new int { pp } }
+      {
+
+      }
+
+      ADeepCopy(const ADeepCopy& rhs ) : x { rhs.x }, p { new int { *rhs.p }}
+};
+
 int main(int argc, const char* argv[])
 {
 
