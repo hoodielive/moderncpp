@@ -86,6 +86,9 @@ class ADeepCopy
       }
 
       ADeepCopy(const ADeepCopy& rhs ) : x { rhs.x }, p { new int { *rhs.p }}
+      {
+        std::cout << "User defined deep copy invoked.";
+      }
 };
 
 int main(int argc, const char* argv[])
@@ -93,6 +96,8 @@ int main(int argc, const char* argv[])
 
   AgoCopyConstructor o1{ 1, 2 };
   AgoCopyConstructor o2 = o1;
+  ADeepCopy o3{ 4, 5 };
+  ADeepCopy o4 = 3;
   Oturupon otura;
 
   return 0;
