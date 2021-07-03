@@ -72,6 +72,6 @@ int main()
   refPoint.Display();
   ptrPoint->Display();
 
-  cout << "Point's address: " << &point << " refPoint is referencing: " << &refPoint << "ptrPoint is pointing to: " << ptrPoint << endl;
+  cout << "Point's address: " << &point << " refPoint is referencing: " << &refPoint << " ptrPoint is pointing to: " << ptrPoint << endl;
   return 0;
 }
