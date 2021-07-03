@@ -72,6 +72,11 @@ int main()
   refPoint.Display();
   ptrPoint->Display();
 
+  Point2D * myPoint = new Point2D();
+  myPoint->Display();
+
+  (*myPoint).Display();
+
   cout << "Point's address: " << &point << " refPoint is referencing: " << &refPoint << " ptrPoint is pointing to: " << ptrPoint << endl;
   return 0;
 }
