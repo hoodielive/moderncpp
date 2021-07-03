@@ -10,7 +10,8 @@ class Student
 
     Student(const string& firstName, const string& lastName): mFirstName(firstName), mLastName(lastName) {}
 
-    bool Equals(const Student& otherStudent)
+    //bool Equals(const Student& otherStudent)
+    bool operator==(const Student& otherStudent)
     {
       return mFirstName == otherStudent.mFirstName && mLastName == otherStudent.mLastName;
     }
@@ -23,9 +24,9 @@ class Student
 int main(int argc, const char* argv[])
 {
   Student studentA("Jon", "Doe");
-  Student studentB("Jane", "Doe");
+  Student studentB("Jon", "Doe");
 
-  if (studentA.Equals(studentB))
+  if (studentA == studentB)
   {
     cout << "studentA and studentB are the same." << endl;
   }
@@ -33,6 +34,5 @@ int main(int argc, const char* argv[])
   {
     cout << "studentA and studentB are NOT the same." << endl;
   }
-
   return 0;
 }
