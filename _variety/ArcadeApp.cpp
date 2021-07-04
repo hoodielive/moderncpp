@@ -38,7 +38,7 @@ Point2D &Point2D::RefOurselves()
 Point2D *Point2D::PointerOurselves()
 {
   return this;
-}
+};
 
 void Point2D::SetX(int x) // :: Scope resolution operator.
 {
