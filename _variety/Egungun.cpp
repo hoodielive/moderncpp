@@ -13,8 +13,8 @@ class Egungun
     int GetX();
     int GetY();
     
-    //int& refX();
-    // int& refY();
+    int* refPointer;
+    int& refReference();
 
     void Display();
 //    ostream& consoleOut<<(const ostream& someOtherThing);
@@ -50,7 +50,6 @@ int Egungun::GetX()
 {
   return this->mX;
 };
-
 void Egungun::Display()
 {
   cout << "The value of mX is: " << mX << " and the value of mY is: " << mY << "\n";
