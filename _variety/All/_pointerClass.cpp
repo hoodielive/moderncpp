@@ -28,7 +28,7 @@ class Point2D
 };
 
 Point2D::Point2D(): Point2D(0, 0) {}
-Point2D::Point2D(int x, int y): mX (x), mY(y)
+Point2D::Point2D(int x, int y): mX(x), mY(y)
 {
   this->Display();
   this->mX = 0;
