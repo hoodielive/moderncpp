@@ -2,11 +2,13 @@
 
 using namespace std;
 
-class MyBaseClass {
+class MyBaseClass 
+{
 public:
   int condor1, condor2;
 
-  virtual void doWork() {
+  virtual void doWork() 
+  {
     std::cout << "Hello, from a derived class." << std::endl;
   }
 
@@ -19,7 +21,8 @@ private:
   int onion;
 };
 
-class MyDerivedClass : public MyBaseClass {
+class MyDerivedClass : public MyBaseClass 
+{
   // condor1 and condor2 also accessible here.
   // c and x also accessible here.
   // onyx and onion is NOT accessible here.
@@ -27,17 +30,20 @@ class MyDerivedClass : public MyBaseClass {
 public:
   int xa;
 
-  virtual void doWork() {
+  virtual void doWork() 
+  {
     std::cout << "Hello, from a myDerived class." << std::endl;
   }
 };
 
-class MySecondDerivedClass : public MyDerivedClass {
-public:
-  bool b;
+class MySecondDerivedClass : public MyDerivedClass 
+{
+  public:
+    bool b;
 };
 
-int main() {
+int main() 
+{
   MyDerivedClass o;
 
   o.condor1 = 33;
@@ -51,10 +57,12 @@ int main() {
   p->doWork();
   delete p;
 
-  MyDerivedClass *f = new MySecondDerivedClass;
+  MyDerivedClass* f = new MySecondDerivedClass;
   f->doWork();
   delete f;
+
   // o.c = 'a'; // Error, not accessible to object because of private and
   // protected access modifiers. o.x = 123; // Error, not accessible to object
   // because of private and protected access modifiers.
+
 }
