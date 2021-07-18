@@ -22,7 +22,7 @@ class Point2D
     // Functions.
     void Display();
 
-private:
+  private:
     int mX; 
     int mY;
 };
