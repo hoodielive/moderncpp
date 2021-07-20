@@ -20,6 +20,8 @@ class Student : public Person
 
 int main()
 {
-  Student semester1{"Ose Osa", 3};
-  std::cout << semester1.getSemester() << "\n";
+  Student student{"Ose Osa", 3};
+  std::cout << student.getSemester() << "\n";
+  std::cout << student.getname() << "\n";
+  return 0;
 }
