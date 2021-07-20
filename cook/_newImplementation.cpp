@@ -11,8 +11,10 @@ class Person
 
 class Student : public Person 
 {
+
   private: 
     int semester; 
+
   public:
     Student( const std::string& aname, int asemester ) : Person::Person{ aname }, semester{ asemester } {};
     int getSemester() const { return semester; }
