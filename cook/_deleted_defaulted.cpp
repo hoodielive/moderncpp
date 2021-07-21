@@ -4,7 +4,6 @@ class foo_not_copyable
 {
   public:
     foo_not_copyable() = default;
-
     foo_not_copyable(foo_not_copyable const&) = delete;
     foo_not_copyable& operator=(foo_not_copyable const&) = delete;
 };
@@ -19,7 +18,7 @@ class Foo
 inline Foo& Foo::operator=(Foo const &) = default;
 class Data
 {
-  
+  Data() = delete;  
 };
 
 class data_wrapper
