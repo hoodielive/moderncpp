@@ -9,9 +9,17 @@ class foo_not_copyable
     foo_not_copyable& operator=(foo_not_copyable const&) = delete;
 };
 
+class Foo
+{
+  public:
+    Foo() = default;
+    inline Foo& operator=(Foo const &);
+};
+
+inline Foo& Foo::operator=(Foo const &) = default;
 class Data
 {
-
+  
 };
 
 class data_wrapper
