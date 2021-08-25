@@ -2,7 +2,7 @@
 
 void returnKeithToConsciousness()
 {
-   std::cout << "Keith is a punk!" << std::endl; 
+   std::cout << "Keith is a omo-Kalunga!" << std::endl; 
 }
 
 
