@@ -2,17 +2,13 @@
 #include <ctime>
 #include <vector>
 
-
 int main()
 {
-
     // Initialize.
-
     std::vector<int> intArr(100000, 1);
     int sum = 0;
 
     // Optimization of Loops.
-
     int start_t = clock();
 
     for (size_t i = 0; i < intArr.size(); i++)
@@ -27,7 +23,6 @@ int main()
     }
 
     // Do iterator caching.
-
     std::vector<int>::const_iterator end = cend(intArr);
     for (std::vector<int>::const_iterator it = cbegin(intArr); it != end; ++it)
     {
