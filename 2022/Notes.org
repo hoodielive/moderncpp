@@ -1,0 +1,11 @@
+#+TITLE: Rules
+* Core
+  Whenever you break the rules, the compiler will preach!
+* Standard Library
+  Things you use to work on your programs in an accelerated and advanced way.
+  For example - iostream.
+  This is an absolute nightmare for a Game developer better to write the bulk of your
+  functionality from scratch. *Cough* C.
+* STL (Standard Template Library).
+  Part of the Standard Library but has a collection of 'container' types.
+* Template
