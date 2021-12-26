@@ -1,0 +1,31 @@
+#+TITLE: Top Down Approach 
+
+* Run the Game Loop
+
+  ```cpp
+
+  int main()
+  {
+      do 
+      {
+        PlayGame;
+      }
+  }while(WantToPlayAgain)
+
+  return 0;
+
+  ```
+
+* Intialize and PlayGame
+  ```cpp 
+
+    do
+    {
+      Prompt Player for input
+      Get input
+      Update Game
+      Draw Game 
+    }while( Game is not over )
+
+    return 0;
+  ```
