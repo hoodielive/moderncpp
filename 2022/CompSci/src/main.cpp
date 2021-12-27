@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Foo/foo.h"
 
 using namespace std;
 
@@ -15,6 +16,7 @@ int main(int argc, char *argv[])
   // The number is going to be huge.
 
   cout << "Address: " << &num << endl;
+  foo();
 
   return 0;
 }

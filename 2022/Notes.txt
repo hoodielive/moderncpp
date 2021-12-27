@@ -16,3 +16,5 @@ is tied to the function:
 
 When the function returns or ends, the stack memory of that function is released back to the
 system.
+
+Stack memory always starts from a higher address and grows DOWN.
