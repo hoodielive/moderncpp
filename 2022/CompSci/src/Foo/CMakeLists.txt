@@ -1,1 +1,1 @@
-add_library(foo Foo.cpp)
+add_library(Foo Foo.cpp)

@@ -1,4 +1,4 @@
-#include "foo.h"
+#include "Foo.h"
 #include <iostream>
 
 using namespace std;

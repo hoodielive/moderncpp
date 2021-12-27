@@ -1,12 +1,11 @@
 #include <iostream>
-#include "Foo/foo.h"
+#include "./Foo/Foo.h"
 
 using namespace std;
 
 
 int main(int argc, char *argv[])
 {
-
   int num = 7;
 
   // Give me the value.
@@ -16,7 +15,8 @@ int main(int argc, char *argv[])
   // The number is going to be huge.
 
   cout << "Address: " << &num << endl;
-  foo();
+
+  Foo();
 
   return 0;
 }
