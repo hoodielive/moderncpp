@@ -18,3 +18,9 @@ When the function returns or ends, the stack memory of that function is released
 system.
 
 Stack memory always starts from a higher address and grows DOWN.
+
+A Pointer is a variable that stores the memory address of the data.
+Simply put: pointers are a level of indirection from the data.
+
+In C++, a pointer is defined by adding an * to the type of the variable.
+  - Integer pointer: int* p = &num;
