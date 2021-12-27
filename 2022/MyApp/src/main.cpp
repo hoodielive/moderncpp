@@ -1,11 +1,13 @@
-#include "adder.h"
+#include "Adder/adder.h"
+#include <iostream>
 
+using namespace std;
 
 int main(int argc, char *argv[])
 {
-  adder addStuff;
-  std::cout << "Hello, Project" << std::endl;
-  addStuff = adder(35.1f, 45.2f);
+
+  cout << "Hello, Project" << endl;
+  cout << "The answer is: " << add(35.1f, 45.2f) << endl;
 
   return 0;
 }
