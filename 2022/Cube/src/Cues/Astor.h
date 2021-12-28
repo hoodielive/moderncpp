@@ -1,9 +1,8 @@
 #pragma once 
 
 // only compile once
-using namespace uuic
-{
-  class Cube
+namespace uuic {
+  class Astor
   {
     // API
 

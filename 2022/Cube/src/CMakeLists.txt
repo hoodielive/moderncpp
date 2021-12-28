@@ -1,3 +1,9 @@
 cmake_minimum_required(VERSION 3.2)
-project(Cube)
-add_executable(${PROJECT_NAME} main.cpp Cube.cpp Cube.h)
+project(Astor)
+add_executable(Astor main.cpp)
+
+target_include_directories(${PROJECT_NAME} PUBLIC Cues)
+
+target_link_directories(${PROJECT_NAME} PRIVATE Cues)
+
+target_link_libraries(${PROJECT_NAME} Cues)
