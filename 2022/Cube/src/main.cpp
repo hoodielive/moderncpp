@@ -1,7 +1,8 @@
-#include "Cube.h"
+#include "Cube/Cube.h"
 #include <iostream>
 
 using namespace std;
+using namespace uuic; 
 
 int main(int argc, char *argv[])
 {
