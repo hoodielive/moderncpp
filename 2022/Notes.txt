@@ -37,5 +37,17 @@ Object Orientation
 When an instance of a class is created, the class constructor sets up the
 initial state of the object.
 
+If we do not provide any custom constructors, the C++ compiler provides an
+automatic 'default' constructor for our class free.
 
+The automatic default constructor will only initialize all member Variables
+to their default values.
+
+Custom Default Constructor: The simplest constructor we can provide is a custom
+default constructor that specifies the state of the object when the object is constructed.
+
+We define one by:
+- A member function with the same name of the class.
+- The function takes zero parameters.
+- The function does NOT return a value.
 
