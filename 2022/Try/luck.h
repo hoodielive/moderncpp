@@ -1,6 +1,7 @@
 #pragma once
 
-struct ClockOfTheLongNow 
+class ClockOfTheLongNow 
 {
-  void develop();
+  public:
+    void develop();
 };

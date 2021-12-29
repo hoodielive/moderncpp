@@ -1,4 +1,4 @@
-#include "luck.h"
+#include "luck.cpp"
 #include <iostream>
 
 
