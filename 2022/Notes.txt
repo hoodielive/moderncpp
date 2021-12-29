@@ -9,6 +9,7 @@ Variables live on a STACK.
 
 
 Stack memory
+
 By default, every variable in C++ is placed in stack memory.
 
 Stack memory is associated with the current function and the memory's lifecycle 
@@ -22,5 +23,19 @@ Stack memory always starts from a higher address and grows DOWN.
 A Pointer is a variable that stores the memory address of the data.
 Simply put: pointers are a level of indirection from the data.
 
+
+Heap Memory
+
 In C++, a pointer is defined by adding an * to the type of the variable.
   - Integer pointer: int* p = &num;
+
+Heap memory always starts from a lower address and grows UP.
+
+
+Object Orientation
+
+When an instance of a class is created, the class constructor sets up the
+initial state of the object.
+
+
+
