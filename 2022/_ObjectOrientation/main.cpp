@@ -1,16 +1,13 @@
-#include "Cube.h"
+#include "Cube.cpp"
 #include <iostream>
+using namespace egun;
 
-namespace egun
+int main(int argc, char *argv[])
 {
-  int main()
-  {
-    // Create a Cube on stack memory.
-    egun::Cube c;
+  egun::Cube c;
 
-    std::cout << "Volume: " << c.getVolume() << std::endl;
-
-    return 0;
-  }
+  std::cout << "Volume: " << c.getVolume(4) << std::endl;
+  return 0;
+  
+  return 0;
 }
-

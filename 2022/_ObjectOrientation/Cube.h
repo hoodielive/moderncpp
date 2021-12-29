@@ -2,16 +2,7 @@
 
 namespace egun 
 {
-  class Cube
-  {
-    public:
-      Cube();
-
-      double getVolume();
-      double getSurfaceArea();
-      void setLength(double length);
-
-    private:
-      double length_;
-  };
-}
+  double getVolume(double num);
+  double getSurfaceArea();
+  void setLength(double length);
+};
