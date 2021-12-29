@@ -4,25 +4,28 @@ using namespace std;
 
 namespace egun
 {
-  class Cube
+  Cube::Cube() noexcept
   {
-    public:
-      double getVolume(double num)
-      {
-        return num;
-      };
+    length_ = 1;
+  }
 
-      double getSurface(double surface)
-      {
-        return surface;
-      }
+  Cube::Cube(const Cube& obj) noexcept
+  {
+    length_ = obj.length_;
+  }
 
-      void setLength(double length)
-      {
-        cout << length << endl;
-      }
+  double Cube::getVolume(double num)
+  {
+    return num;
+  }
 
-    private:
-      double length_;
-  };
+  double Cube::getSurfaceArea(double surface)
+  {
+    return surface;
+  }
+
+  void Cube::setLength(double length)
+  {
+    cout << length << endl;
+  }
 }
