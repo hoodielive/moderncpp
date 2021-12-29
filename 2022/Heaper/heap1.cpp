@@ -22,10 +22,13 @@ int main()
   Cube *c = new Cube;
   *p = 42;
 
-  (*c).setLength(4);
+  c->setLength(4);
 
   delete c;
   delete p;
   
+  p = nullptr;
+  c = nullptr;
+
   return 0;
 }
