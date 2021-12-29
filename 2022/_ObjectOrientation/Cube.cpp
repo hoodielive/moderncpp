@@ -2,7 +2,7 @@
 
 namespace egun
 {
-  Cube::Cube()
+  egun::Cube::Cube()
   {
     length_ = 1;
   }
