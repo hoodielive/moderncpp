@@ -11,11 +11,11 @@ int main(int argc, char *argv[])
   for (int i = 0; i < size; i++)
   {
     x[i] = i + 3;
-
-    cout << x << endl;
+    cout << *x << endl;
   }
 
   delete[] x;
+  x = nullptr;
 
   return 0;
 
