@@ -24,6 +24,7 @@ class Egungun
 };
 
 Egungun::Egungun(): Egungun(0, 0) {};
+
 Egungun::Egungun(int x, int y): mX(x), mY(y)
 {
   this->mX = x;
@@ -50,6 +51,7 @@ int Egungun::GetX()
 {
   return this->mX;
 };
+
 void Egungun::Display()
 {
   cout << "The value of mX is: " << mX << " and the value of mY is: " << mY << "\n";
