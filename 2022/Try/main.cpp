@@ -5,8 +5,6 @@
 int main()
 {
   ClockOfTheLongNow c;
-
-  c();
-
+  c.develop();
   return 0;
 }

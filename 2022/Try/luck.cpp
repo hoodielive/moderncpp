@@ -1,8 +1,11 @@
 #include "luck.h"
 #include <iostream>
 
-void ClockOfTheLongNow()
+struct ClockOfTheLongNow()
 {
-  std::cout << "Live the medicine." << std::endl;
-};
+  void develop()
+  {
+    std::cout << "Live the medicine." << std::endl;
+  }
+}
 
