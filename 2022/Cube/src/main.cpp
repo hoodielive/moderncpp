@@ -28,18 +28,19 @@ namespace uuic {
 
     return 0;
   }
+
+  double someOtherFunction()
+  {
+    Astor cubes[100];
+    double totalVolume = 0;
+
+    for (int i = 0; i < 100; i++)
+    {
+      cubes[i].setLength(i);
+      totalVolume += cubes[i].getVolume();
+    }
+
+    return totalVolume;
+  }
 }
 
-double someOtherFunction()
-{
-   Astor cubes[100];
-   double totalVolume = 0;
-
-   for (int i = 0; i < 100; i++)
-   {
-     cubes[i].setLength(i);
-     totalVolume += cubes[i].getVolume();
-   }
-
-   return totalVolume;
-}
