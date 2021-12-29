@@ -2,7 +2,7 @@
 #include "Puzzle/puzzle.h"
 #include <iostream>
 
-void someOtherFunction();
+double someOtherFunction();
 
 
 namespace uuic {
@@ -22,12 +22,24 @@ namespace uuic {
 
     double a = kofou->getSurfaceArea();
     double b = kofou->getVolume();
+    
+    std::cout << "Surface Area: " << a << std::endl;
+    std::cout << "Volume: " << b << std::endl;
 
     return 0;
   }
 }
 
-void someOtherFunction()
+double someOtherFunction()
 {
-  std::cout << "Hello, from some other function." << "\n";
+   Astor cubes[100];
+   double totalVolume = 0;
+
+   for (int i = 0; i < 100; i++)
+   {
+     cubes[i].setLength(i);
+     totalVolume += cubes[i].getVolume();
+   }
+
+   return totalVolume;
 }
