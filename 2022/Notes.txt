@@ -51,3 +51,12 @@ We define one by:
 - The function takes zero parameters.
 - The function does NOT return a value.
 
+Storage by Reference
+A reference is an alias to existing memory and is denoted in the type with an amperstand(&).
+A reference does not store memory itself, it is only an alias to another variable.
+The alias must be assigned when the variable is initialized.
+
+For example:
+Cube &c = cube; // Alias to variable cube.
+int &i = count; // Alias to the variable i.
+egun::HSLAPixel &p // illegal! must alias something when variable is initialized.
