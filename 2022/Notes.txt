@@ -1,5 +1,4 @@
 A Variable
-
 - A name
 - A type
 - A value
@@ -60,3 +59,24 @@ For example:
 Cube &c = cube; // Alias to variable cube.
 int &i = count; // Alias to the variable i.
 egun::HSLAPixel &p // illegal! must alias something when variable is initialized.
+
+
+# Destructors
+When an instance of a class is cleaned up, the class destructor is the last call in a class's lifecycle.
+
+An automatic default destructor is added to your class if no other destructor is defined.
+
+The only action of the automatic default destructor is to call the default destructor of all member objects.
+
+A destructor should never be called directly. Instead, it is automatically called when the object's memory is 
+being reclaimed by the system.
+
+If the object is on the stack, when the fuction returns.
+If the object is on the heap, when the delete function is called. 
+
+To add custom behaviro to the end-of-life of the function, a custom destructor can be defined as:
+1. A custom destructor is a member function.
+2. The function's destructor is the name of the class, preceded by a tilde ~.
+3. All destructors have zero arguments and no return type.
+
+Cube::~Cube(); // custom destructor
