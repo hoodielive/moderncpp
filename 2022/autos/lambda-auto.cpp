@@ -22,9 +22,9 @@ int get_size(int fur)
 {
   return fur;
 }
+
 int main(int argc, char *argv[])
 {
   const int bufSize = 512;
   const int i = get_size(4);
-
 }
