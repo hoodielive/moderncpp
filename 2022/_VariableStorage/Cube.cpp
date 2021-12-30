@@ -20,7 +20,7 @@ namespace egun
 
   Cube& Cube::operator=(const Cube& obj)
   {
-    std::cout << "Transformed $" << getVolume() << "-> $" << obj.getVolume() << std::endl;
+    std::cout << "Transformed $" << getVolume(3) << "-> $" << obj.getVolume() << std::endl;
 
     length_ = obj.length_;
 
