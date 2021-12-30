@@ -4,6 +4,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+
   int *x;
   int size = 3;
   x = new int[size];
