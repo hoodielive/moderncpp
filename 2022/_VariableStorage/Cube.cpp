@@ -4,12 +4,14 @@ using namespace std;
 
 namespace egun
 {
+  // 1 parameter constructor.
   Cube::Cube(double length)
   {
     length_ = length;
     std::cout << "Created $" << getVolume(1) << std::endl;
   }
 
+  // Takes in a cube by reference &.
   Cube::Cube(const Cube& obj)
   {
     length_ = obj.length_;
@@ -18,7 +20,7 @@ namespace egun
 
   Cube& Cube::operator=(const Cube& obj)
   {
-    std::cout << "Transformed $" << getVolume(5) << "-> $" << obj.getVolume() << std::endl;
+    std::cout << "Transformed $" << getVolume() << "-> $" << obj.getVolume() << std::endl;
 
     length_ = obj.length_;
 
