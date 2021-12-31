@@ -89,9 +89,9 @@ std::vector uses a template type.
 
 std::vector<char>
 std::vector<int>
-std::vector<uuic::Cube> // where uuic is a namespace.
+std::vector<egun::Cube> // where egun is a namespace.
 
 
 Expression - combines things returns a value.
 Statement - execute in sequence - carry out some action.
-Expression Statement 
+Expression Statement  - an expression that if true causes an action to be executed.
