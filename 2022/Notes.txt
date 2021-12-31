@@ -80,3 +80,13 @@ To add custom behaviro to the end-of-life of the function, a custom destructor c
 3. All destructors have zero arguments and no return type.
 
 Cube::~Cube(); // custom destructor
+
+
+# Templates
+A template type is a special type that can take on different types when the type is initialized.
+
+std::vector uses a template type.
+
+std::vector<char>
+std::vector<int>
+std::vector<uuic::Cube> // where uuic is a namespace.
