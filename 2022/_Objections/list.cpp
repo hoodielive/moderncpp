@@ -1,5 +1,6 @@
 #include "list.h"
 #include <string>
+#include <iostream>
 
 List::List()
 {
@@ -43,6 +44,8 @@ std::string List::at(int index) const
 int main()
 {
 
+  List lister;
+  std::cout << sizeof(lister) << std::endl;
   return 0;
 }
 
