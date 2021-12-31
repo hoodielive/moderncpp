@@ -12,7 +12,9 @@ namespace egun
       double getSurfaceArea(double surface);
       void setLength(double length);
 
+
       Cube operator=(const Cube& obj);
+
     private:
       double length_;
   };

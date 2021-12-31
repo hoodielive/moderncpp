@@ -95,3 +95,27 @@ std::vector<egun::Cube> // where egun is a namespace.
 Expression - combines things returns a value.
 Statement - execute in sequence - carry out some action.
 Expression Statement  - an expression that if true causes an action to be executed.
+
+
+Templates
+
+A template variable is defined by declaring it before the beginning of a class or function.
+
+template<typename T>
+class List {
+  ...
+  private:
+    T data;
+};
+
+
+or
+
+template<typename T>
+int max(T a, T b) {
+  if (a > b) { return a; }
+  return b;
+}
+
+
+Templated variables are checked at compile time, which allows for errors to be caught before running program.

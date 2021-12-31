@@ -1,4 +1,4 @@
-#include "HSLAPixel.h"
+#include "cs225/HSLAPixel.h"
 
 class Cube
 {
@@ -13,6 +13,7 @@ class Cube
 
     double getSurfaceArea() const;
 
+     
   private:
     double length_;
     cs225::HSLAPixel color_;

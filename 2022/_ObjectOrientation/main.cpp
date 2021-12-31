@@ -24,6 +24,6 @@ int main(int argc, char *argv[])
 
   std::cout << "Volume: " << c.getVolume(4) << std::endl;
   Cube c2 = foo();
-  
+
   return 0;
 }

@@ -1,7 +1,7 @@
 #include "Cube.h"
 #include <vector>
 
-class Stack
+class Stack : Cube
 {
   public:
     void push_back(const Cube& cube);

@@ -1,4 +1,5 @@
 #include "Stack.h"
+#include "cs225/HSLAPixel.h"
 #include "Game.h"
 
 Game::Game()
