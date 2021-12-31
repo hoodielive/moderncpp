@@ -4,8 +4,8 @@ A Variable
 - A value
 - A location in memory ("memory address")
 
-Variables live on a STACK.
 
+Variables live on a STACK.
 
 Stack memory
 
@@ -90,3 +90,8 @@ std::vector uses a template type.
 std::vector<char>
 std::vector<int>
 std::vector<uuic::Cube> // where uuic is a namespace.
+
+
+Expression - combines things returns a value.
+Statement - execute in sequence - carry out some action.
+Expression Statement 
