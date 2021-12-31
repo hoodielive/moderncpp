@@ -4,7 +4,7 @@ using namespace std;
 
 namespace egun
 {
-  Cube::Cube() noexcept
+  Cube::Cube(double width, cs225::HSLAPixel color) noexcept
   {
     length_ = 1;
     std::cout << "Default Constructor invoked!" << std::endl;
@@ -16,7 +16,7 @@ namespace egun
     std::cout << "Copy Constructor invoked!" << std::endl;
   }
 
-  double Cube::getVolume(double num)
+  double Cube::getVolume(double num) const
   {
     return num;
   }
