@@ -1,10 +1,37 @@
 #include <iostream>
 using namespace std;
 
+
+void Resize(int** optrArray, int newSize);
+
 int main(int argc, char *argv[])
 {
+
   const int MAX = 10;
   int max = 10;
+
+  int *optrArray = new int[MAX];
+
+  int length = max;
+
+  do {
+    cout << "Length is now: " << length << endl;
+
+    for (int x = 0; x < length; x++)
+    {
+      optrArray[x] = x + 1;
+      cout << "optrArray[" << x << "]: " << optrArray[x] << endl;
+    }
+
+    cout << "Please input the new length of the array (>=0 will quit): ";
+    cin >> length;
+
+    if (length > 0)
+    {
+      Resize(&optrArray, length);
+    }
+  }while (length > 0);
+
 
   int array2D[MAX][MAX];
 
@@ -61,3 +88,5 @@ int main(int argc, char *argv[])
 
   return 0;
 }
+
+
