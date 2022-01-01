@@ -4,7 +4,7 @@ using namespace std;
 
 namespace egun
 {
-  Cube::Cube(double width, cs225::HSLAPixel color) noexcept
+  Cube::Cube(double width, cs225::HSLAPixel color) noexcept : Shape(width)
   {
     length_ = 1;
     std::cout << "Default Constructor invoked!" << std::endl;
