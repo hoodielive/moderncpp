@@ -22,3 +22,8 @@ long array[6] { 2, 4, 6, 8, 9, 10 };
 - The size of an array is current number of elements stored in the array.
 - An array is full when the size of the array is = to the capacity.
 - The only way to add another element is to allocate a new, larger array and copy over all of the data.
+
+std::vector implements an array that dynamically grows in size automatically. However, all properties remain true:
+  - Array elements are a fixed data type.
+  - At any given point, the array has a fixed capacity.
+  - The array must be expanded when the capacity is reached.

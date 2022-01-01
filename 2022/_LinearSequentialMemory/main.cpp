@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Cube.cpp"
+#include <vector>
 
 using namespace std;
 
@@ -23,5 +24,35 @@ int main()
 
   offset = (long)&(cubes[2]) - (long)&(cubes[0]);
   cout << offset << endl;
+
+  // Vector Magic.
+
+  std::vector<Cube> cubes2{ Cube(11), Cube(42), Cube(400) };
+
+  // First examine capacity:
+
+  // So first tell me how much data can I store in my vector.
+  cout << "Initial capacity: " << cubes2.capacity() << endl;
+
+  // So I expect the size to be 3 and then afterwards it should be 4.
+  cubes2.push_back( Cube(800) );
+
+  cout << "Size after adding: " << cubes2.size() << endl;
+  cout << "Capacity after adding: " << cubes2.capacity() << endl;
+
+  // Using pointer arithmetic, ask the computer to calculate
+  // the offset from the beginning of the array to [2]:
+  offset = (long)&(cubes2[2]) - (long)&(cubes2[0]);
+  cout << offset << endl;
+
+  Cube target = Cube(400);
+  for (unsigned i = 0; i < cubes2.size(); i++)
+  {
+    if (target == cubes2[i])
+    {
+      cout << "Found target at [" << i << "]" << endl;
+    }
+  }
+
   return 0;
 }
