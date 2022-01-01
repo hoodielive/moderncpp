@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
 {
 
   const int MAX = 10;
+
   int max = 10;
 
   int *optrArray = new int[MAX];
@@ -31,7 +32,8 @@ int main(int argc, char *argv[])
       Resize(&optrArray, length);
     }
   }while (length > 0);
-
+  
+  delete[] optrArray;
 
   int array2D[MAX][MAX];
 
@@ -89,4 +91,11 @@ int main(int argc, char *argv[])
   return 0;
 }
 
-
+void Resize(int** optrArray, int newSize)
+{
+  if (optrArray != nullptr)
+  {
+    delete[] *optrArray;
+  }
+  *optrArray = new int[newSize];
+}
