@@ -29,5 +29,36 @@ int main(int argc, char *argv[])
   /* Another way to do this is.. */
   int (*aptr)[MAX] = new int[MAX][MAX];
 
+  // First Dimension.
+  for (int j = 0; j < MAX; j++)
+  {
+    // Second Dimension.
+    for (int k = 0; k < MAX; k++)
+    {
+      // Execute.
+
+      aptr[j][k] = j * k; cout << "j = " << j << ", k = " 
+        << k << ", val = " << pointer[j][k] << endl;
+    }
+  }
+
+  delete[] aptr;
+  aptr = nullptr;
+
+  // Another way.
+  int** _pointer = new int *[MAX];
+
+  for (int p = 0; p < MAX; p++)
+  {
+    // So each of these pointers will be assigned pointers with
+    // MAX array capacity.
+    //
+
+    _pointer[p] = new int[MAX];
+  }
+
+  delete[] _pointer;
+  _pointer = nullptr;
+
   return 0;
 }
