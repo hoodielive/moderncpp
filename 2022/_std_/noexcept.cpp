@@ -13,5 +13,3 @@ class Structure
   private:
     double length_;
 };
-
-

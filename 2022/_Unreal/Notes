@@ -1,0 +1,36 @@
+Classes and Inheritance
+
+Parent Class -> child class
+variables/functions -> variables/functions +childVars/childFuncs
+
+
+The child class can override the parent class.
+
+When a child point to child one (static)
+
+
+Object -> Actor -> Pawn -> Character
+
+Object - store data - cannot be placed in a level.
+
+  Components derived:
+    1. UStaticMesh
+    2. UTexture
+
+
+
+Actor - can be placed in the level and can have a visual representation.
+
+  Components derived:
+    1. ACameraActor
+    2. AHUD
+
+Pawn - can be possessed by a controller.
+
+  Components derived:
+  1. AWheeledVehicle
+
+Character - have a character movement component and have functionality appropriate for a character.
+  Components derived:
+  1. APaperCharacter.
+
