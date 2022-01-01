@@ -52,7 +52,6 @@ int main(int argc, char *argv[])
   {
     // So each of these pointers will be assigned pointers with
     // MAX array capacity.
-    //
 
     _pointer[p] = new int[MAX];
   }
