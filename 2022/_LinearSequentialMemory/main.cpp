@@ -38,13 +38,16 @@ int main()
   cubes2.push_back( Cube(800) );
 
   cout << "Size after adding: " << cubes2.size() << endl;
+
+  // The capacity prolly has increased lol.
   cout << "Capacity after adding: " << cubes2.capacity() << endl;
 
   // Using pointer arithmetic, ask the computer to calculate
   // the offset from the beginning of the array to [2]:
   offset = (long)&(cubes2[2]) - (long)&(cubes2[0]);
-  cout << offset << endl;
+  cout << "Memory separation: " << offset << endl;
 
+  // Find a specific target cube in the array:
   Cube target = Cube(400);
   for (unsigned i = 0; i < cubes2.size(); i++)
   {
