@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
   cout << "The values are: " << p[0] << ' ' << p[1] << ' ' << p[2] << endl;
 
   delete[] p;
+
   p=nullptr;
 
   cout << "The values are: " << p[0] << ' ' << p[1] << ' ' << p[2] << endl;
