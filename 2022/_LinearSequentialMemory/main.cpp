@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 int main()
 {
   // Create a fixed-size array of 10 primes:

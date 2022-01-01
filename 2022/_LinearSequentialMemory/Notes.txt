@@ -27,3 +27,27 @@ std::vector implements an array that dynamically grows in size automatically. Ho
   - Array elements are a fixed data type.
   - At any given point, the array has a fixed capacity.
   - The array must be expanded when the capacity is reached.
+
+
+## Linked memory
+- Stores data together with a "link" to the location (in memory) of the next list node instead of storing it sequentially
+  like arrays.
+
+  List Nodes:
+  a list node refers to pair of both the data and the link.
+
+  C++ ListNode Class:
+  template<typename T>
+  class ListNode
+  {
+    public:
+      T &data;
+      ListNode *next;
+      ListNode(T &data) : data(data), next(NULL) {}
+  }
+
+ Linked List:
+ Zero or more ListNode elements linked together form a Linked List.
+
+  - A pointer called the 'head pointer' stores the link to the beginning of the list.
+  - A pointer to nullptr marks the end of the list.
