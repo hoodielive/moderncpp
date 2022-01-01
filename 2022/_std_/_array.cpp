@@ -20,6 +20,6 @@ int main(int argc, char *argv[])
 
   printMe(data);
 
-  cout << "Array indices that were assigned: " << data.size() << endl;
+  cout << "Array indices that were assigned: " << sizeof(data.size()) << endl;
   return 0;
 }
