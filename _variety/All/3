@@ -1,7 +1,0 @@
-#include "Utils.h"
-#include <cmath>
-
-bool IsEqual(float x, float y)
-{
-
-}

@@ -1,3 +1,0 @@
-/home/awo/Clones/moderncpp/Cmaker/CMakeFiles/rebuild_cache.dir
-/home/awo/Clones/moderncpp/Cmaker/CMakeFiles/edit_cache.dir
-/home/awo/Clones/moderncpp/Cmaker/CMakeFiles/Cmaker.dir
