@@ -1,0 +1,119 @@
+#+TITLE: Implementation of Pointers
+
+
+* This is a blurb
+#+begin_src cpp
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+
+    char c = 'a';
+    char* p = &c;
+    char d = *p; // Derefence the pointer (return value)
+
+    std::cout << "Assane: " << d << std::endl;
+
+    std::cout << "The value of the deferenced pointers is: " << *p;
+}
+
+#+end_src
+
+#+RESULTS:
+| Assane: | a     |    |     |            |          |     |   |
+| The     | value | of | the | deferenced | pointers | is: | a |
+
+* Second Test.
+#+begin_src cpp
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 123;
+    int* p = &x;
+
+    std::cout << "The value of the dereferenced pointer is: " << *p << '\n';
+
+    ,*p = 456;
+
+    std::cout << "The value of the dereferenced pointer is: " << *p;
+}
+
+#+end_src
+
+#+RESULTS:
+| The | value | of | the | dereferenced | pointer | is: | 123 |
+| The | value | of | the | dereferenced | pointer | is: | 456 |
+
+* References
+
+Another somewhat similar concept is a refence type.
+A reference type is an alias to an existing object in memory.
+References must be initialized.
+Describe as type_name followed by amperstand &.
+
+#+begin_src cpp
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    int x = 123;
+    int& y = x;
+
+    // both x and y point to the same value
+
+    std::cout << "Both x and y are: " << x << "\n" << y << std::endl;
+
+}
+#+end_src
+
+#+RESULTS:
+| Both | x | and | y | are: | 123 |
+|  123 |   |     |   |      |     |
+
+* Const References
+
+#+begin_src cpp
+
+#include <iostream>
+
+int main()
+{
+    int x = 123;
+    const int& y = x;
+    x = 456;
+
+    std::cout << "What your name? " << y << std::endl;
+
+}
+
+#+end_src
+
+#+RESULTS:
+: What your name? 456
+
+* Auto Deduce Type
+
+#+begin_src cpp
+#include <iostream>
+
+int main()
+{
+    auto x = 123;
+    auto& y = x;
+
+    std::cout << "It is: " << y << std::endl;
+}
+#+end_src
+
+#+RESULTS:
+: It is: 123
