@@ -1,15 +1,17 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 
 int main(int argc, char *argv[])
 {
+  typedef int egun;
 
-  const int MAX = 10;
+  const egun MAX = 10;
 
-  int array2D[MAX][MAX];
-  
-  int (*pointer)[MAX] = array2D;
+  egun array2D[MAX][MAX];
+
+  egun (*pointer)[MAX] = array2D;
 
   for (int i = 0; i < MAX; i++)
   {
@@ -19,6 +21,6 @@ int main(int argc, char *argv[])
       cout << "i = " << i << ", j = " << j << ", val" << pointer[i][j] << endl;
     }
   }
-  
+
   return 0;
 }
