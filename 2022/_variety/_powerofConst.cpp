@@ -3,7 +3,6 @@
 #include <string>
 using namespace std;
 
-
 void petro(char* shrew)
 {
   printf("Fear not, sweet wench, they sahll not touch thee, %s", shrew);
@@ -30,8 +29,25 @@ int main(int argc, char *argv[])
 
   if (s == "Hello")
   {
-    std::cout << "The string is equal to \"Hello\"";
+    std::cout << "The string is equal to \"Hello\"" << endl;
   }
 
+  cout << "Type the word shine and I will say it back to you." << endl;
+  string inByte;
+
+  cin >> inByte;
+
+  if (inByte == "shine")
+  {
+    cout << "You said: " << inByte << endl;
+  }
+  else 
+  {
+    cout << "You entered something improper."  << endl;
+  }
+
+  string n = "Ref: Steer";
+  cout << n.c_str();
+  
   return 0;
 }
