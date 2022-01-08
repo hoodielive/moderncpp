@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
   string combine = s + f;
 
   char c1 = s[0];
+  // .at(index) same as []
   char c2 = s.at(0);
   char c3 = s[3];
   char c4 = s.at(3);
@@ -25,6 +26,7 @@ int main(int argc, char *argv[])
   cout << "The value of that variable is: " << combine << std::endl;
   cout << "First character: " << c1 << ", sixth character: " << c3;
 
+  cout << "The value of s is: " << s << endl;
 
   if (s == "Hello")
   {
