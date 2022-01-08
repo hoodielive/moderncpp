@@ -7,9 +7,9 @@ using namespace std;
 void myFunction(int& byref);
 
 void myConstFunction(const string& byconstref);
+
 int main(int argc, char *argv[])
 {
-
   int x = 123;
   myFunction(x);
 
