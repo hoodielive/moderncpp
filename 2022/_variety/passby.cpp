@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 void myFunction(int& byref);
 
 void myConstFunction(const string& byconstref);
