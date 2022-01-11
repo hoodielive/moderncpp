@@ -19,7 +19,7 @@ struct PlayerStats
   int xp;
   int level;
   Vector2D location;
-}player1;
+} player1;
 
 struct AIStats
 {
@@ -27,7 +27,7 @@ struct AIStats
   int weaponDamage;
   Vector2D location;
 
-}rat{ 100, 25, {5, 999} }, alien{ 100, 50, { 4, 9 } };
+} rat{ 100, 25, {5, 999} }, alien{ 100, 50, { 4, 9 } };
 
 
 int main()
