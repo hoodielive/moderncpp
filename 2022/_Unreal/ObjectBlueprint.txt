@@ -24,6 +24,11 @@ Entities: Person, place, thing, concept or event for which data can be stored (N
           A class or struct is a code blueprint containing member variables defining its
           [[ state ]] and member functions (defining its behavior), i.e. what it CAN do.
 
+          From this user defined blueprint, we can create variable instances with pre-set
+          /default or dissimilar states.
+
+          Class or Struct variable instances are referred to as Objects.
+
 Attributes: Characteristics of an entity. Member variables or data members in C++.
 
 Constraints: Restrictions placed on data to ensure data integrity.
@@ -41,4 +46,16 @@ Encapsulation: to reuse code, we encapsulate it. This means we put the code in a
               the same class).
 
               Data-hiding: only allows data members access through public member functions.
+
+Class Example
++++++++++++++
+
+Player Characteristics
+Public members:
+  int getHealth();
+  int setHealth();
+
+Private Members:
+  int health;
+
 
