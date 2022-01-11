@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+struct Vector2D
+{
+  float x;
+  float y;
+};
 
 struct PlayerStats
 {
@@ -13,21 +18,25 @@ struct PlayerStats
   int weaponDamage;
   int xp;
   int level;
-} player1;
+  Vector2D location;
+}player1;
 
 struct AIStats
 {
   int health;
   int weaponDamage;
+  Vector2D location;
 
-}rat{ 100, 25 }, alien{100, 50};
+}rat{ 100, 25, {5, 999} }, alien{ 100, 50, { 4, 9 } };
 
 
-int main(int argc, char *argv[])
+int main()
 {
-  rat = alien;
+  cout << "Rat Location x = " << rat.location.x << endl;
+  cout << "Rat Location y = " << rat.location.y << endl;
 
-  cout << rat.weaponDamage << endl;
+  cout << "Alien Location x = " << alien.location.x << endl;
+  cout << "Alien Location y = " << alien.location.y << endl;
 
   return 0;
 }

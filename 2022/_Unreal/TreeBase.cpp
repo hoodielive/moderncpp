@@ -2,6 +2,12 @@
 #include <cmath>
 using namespace std;
 
+class Vector2D
+{
+  float x;
+  float y;
+};
+
 struct FVector
 {
   void GetActorLocation();
@@ -20,8 +26,14 @@ struct FMath
 
 class ATreeBase
 {
-  FVector SpawnLoc = GetActorLocation();
-  FVector SpawnRot = GetActorRotation();
+  //FVector SpawnLoc = GetActorLocation();
+  //FVector SpawnRot = GetActorRotation();
 };
+
+int main()
+{
+
+  return 0;
+}
 
 
