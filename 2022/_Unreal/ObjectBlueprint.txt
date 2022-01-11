@@ -1,0 +1,44 @@
+Object Blueprint: Struct or Class Example
+
+PlayerCharacter
+  Members
+    int getHealth();
+    int setHealth(int);
+    void printStats();
+
+    int health;
+    int armor;
+    int coin;
+
+Data Modeling:
+
+The process of creating a representation of entities and the relationships between those
+entities for a predetermined problem domain.
+
+4 Building Blocks of a data model.
+
+Entities: Person, place, thing, concept or event for which data can be stored (Noun).
+          Represents a type of object in the real world where each occurrence (instance)
+          is distinct.
+
+          A class or struct is a code blueprint containing member variables defining its
+          [[ state ]] and member functions (defining its behavior), i.e. what it CAN do.
+
+Attributes: Characteristics of an entity. Member variables or data members in C++.
+
+Constraints: Restrictions placed on data to ensure data integrity.
+
+Relationships: between entities (inheritance and composition, or is-a and has-a relationships).
+
+Encapsulation: to reuse code, we encapsulate it. This means we put the code in a named, self-contained,
+               block of code. In OOP, encapsulation refers to the binding of data members and the member 
+               functions that operate on the data members.
+
+              Encapsulation leads to data-hiding. We can specify [[ access ]] rights for the 'members'
+              through special access [[ modifiers ]].
+
+              We can modify the access rights of some members to be public (accessible to code outside
+              the same class).
+
+              Data-hiding: only allows data members access through public member functions.
+
