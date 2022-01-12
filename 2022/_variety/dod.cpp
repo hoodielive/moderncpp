@@ -35,3 +35,16 @@ Temp_Mem_Block begin_temp_alloc(Temp_Allocator* allocator)
   struct Temp_Mem_Block result = { allocator, saved_used = allocator->used };
   return result;
 };
+
+void end_temp_alloc(Temp_Mem_Block block)
+{
+  block.allocator->used = block.saved_used;
+};
+
+struct Temp_Allocator g_tmp;
+void someFunction()
+{
+  struct Temp_Mem_Block tmp_mem = begin_temp_alloc(&g_tmp);
+  // do some work
+  end_temp_alloc(tmp_mem);
+}
