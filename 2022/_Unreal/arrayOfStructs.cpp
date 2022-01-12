@@ -7,6 +7,10 @@ struct Vector2D
   float y;
 };
 
+// Declaration.
+struct PlayerStats;
+
+// Definition.
 struct PlayerStats
 {
   int health;
@@ -36,5 +40,6 @@ int main(int argc, char *argv[])
   cout << players[0].getLocation().y << endl;
   cout << players[1].getLocation().x << endl;
   cout << players[1].getLocation().y << endl;
+
   return 0;
 }
