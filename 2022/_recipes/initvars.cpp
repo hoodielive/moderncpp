@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -15,6 +16,15 @@ class FriendlyFace
 
 int main()
 {
+  using myVector = vector<int>;
+
+  myVector vecA( 1 );
+
+  cout << vecA.size() << " " << vecA[0] << endl;
+
+  myVector vecB( 1, 10 );
+  cout << vecB.size() << " " << endl;
+
   FriendlyFace objA;
   // We employ the initializer here to support uniform
   // initialization.
