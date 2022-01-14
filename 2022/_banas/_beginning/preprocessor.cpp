@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
     for (int i = 0; i < argc; ++i)
     {
       cout << "argv[] is an array of strings." << endl;
+      cout << argv[i] << '\n';
     }
   }
   return 0;
