@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
   {
     printf("Its your %dth birthday but no one cares.", n_Numeric);
   }
-  else if((n_Numeric > 65))
+  else if((n_Numeric >= 65))
   {
 
     printf("We are excited to celebrate your %dth birthday.", n_Numeric);
