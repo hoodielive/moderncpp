@@ -45,5 +45,11 @@ int main(int argc, char *argv[])
    * cosh, tanh, asinh, acosh, atanh.
    */
 
+  // Using random vals
+  // Time is a great random seed because it changes constantly.
+  // Need ctime.
+  srand(time(NULL));
+  int secretNum = rand() % 11; // generate secret numbers up to but not including 11.
+  cout << "Secret Number: " << secretNum << endl;
   return 0;
 }
