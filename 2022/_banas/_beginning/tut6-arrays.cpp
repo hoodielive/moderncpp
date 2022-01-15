@@ -39,11 +39,11 @@ int main(int argc, char *argv[])
   arrSize = sizeof(selectOdds)/sizeof(selectOdds[1]);
 
 //  for (auto j : selectOdds ) cout << j << endl;
-  for (auto j : selectOdds )
+  for (auto j=0; j <= 20; ++j)
   {
-    if (j == (num % 1) == 1)
+    if (j == (num % 2) != 0)
     {
-      printf("The odd is %d", j);
+      printf("The odd is: %d\n", selectOdds[j]);
     }
   }
 
