@@ -34,11 +34,11 @@ int main(int argc, char *argv[])
   int selectOdds[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
   cout << "The size of selectOdds is: " << sizeof(selectOdds) << endl;
+
   cout << "The size of index 0 of selectOdds is: " << sizeof(selectOdds[0]) << endl;
 
   arrSize = sizeof(selectOdds)/sizeof(selectOdds[1]);
 
-//  for (auto j : selectOdds ) cout << j << endl;
   for (auto j=0; j <= 20; ++j)
   {
     if (j == (num % 2) != 0)
