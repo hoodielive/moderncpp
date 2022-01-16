@@ -19,12 +19,16 @@ class Student : public Person
     int semester;
 
   public:
-    explicit Student(const string& name, int semester);
+    explicit Student(const string& name, int semester) : Person::Person{ name }, semester{ semester } {};
     int getsemester() const { return semester; }
 };
 
 int main(int argc, char *argv[])
 {
+  if (argc != 0)
+  {
+    cout << argv << endl;
+  }
 
   Person person { "Jon Doe" };
   cout << person.getname() << "\n";
