@@ -14,7 +14,6 @@ struct Contract
   void add(const Dwarf&);
 };
 
-
 void form_company(Contract &contract)
 {
   for (const auto& dwarf : dwarves)
@@ -23,3 +22,8 @@ void form_company(Contract &contract)
   }
 }
 
+int main()
+{
+
+  return 0;
+}
