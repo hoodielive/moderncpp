@@ -1,8 +1,6 @@
 #include <cstdio>
 #include <iostream>
 
-
-
 struct RatThing
 {
   static void powerUpRatThing(int nuclearIsotopes)
@@ -15,7 +13,7 @@ struct RatThing
     {
       printf("Warning! Hot doggie!\n");
     }
-    
+
     printf("Rat-thing power: %d\n", ratThingsPower);
   }
 };
