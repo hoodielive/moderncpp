@@ -1,21 +1,42 @@
+#include <cstring>
 #include <iostream>
 
 using namespace std;
-
 
 struct SimpleString
 {
   SimpleString(size_t max_size) : max_size{ max_size }, length{} 
     {
+      /* Remember if size_t is unsigned and cannot be negative, so
+       you don't need to check for this bogus condition. */
+
       if (max_size == 0)
       {
         throw std::runtime_error{ "Max size must be at least 1 byte." };
       }
-      else {
+      else 
+      {
         printf("Hello, thanks for playing along.");
       }
       buffer = new char[max_size];
       buffer[0] = 0;
+    }
+
+    void print(const char* tag) const
+    {
+      printf("%s: %s", tag, buffer);
+    }
+
+    bool append_line(const char* x)
+    {
+      const auto x_len = strlen(x);
+
+      if (x_len + length + 2 > max_size) return false;
+      std::strncpy(buffer + length, x, max_size - length);
+      length += x_len;
+      buffer[length++] = '\n';
+      buffer[length] = 0;
+      return true;
     }
 
     ~SimpleString()
@@ -31,7 +52,7 @@ struct SimpleString
 
 int main(int argc, char *argv[])
 {
-  
-  SimpleString loya(3);
+
+  SimpleString loya(255);
   return 0;
 }
