@@ -1,4 +1,6 @@
 #include <cstring>
+#include <cstdio>
+#include <stdexcept>
 #include <iostream>
 
 using namespace std;
