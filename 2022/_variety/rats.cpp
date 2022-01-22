@@ -18,9 +18,6 @@ struct RatThing
   }
 };
 
-
-
-
 int main()
 {
   RatThing::powerUpRatThing(100);
