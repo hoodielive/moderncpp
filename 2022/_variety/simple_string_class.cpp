@@ -62,5 +62,7 @@ int main(int argc, char *argv[])
 {
 
   SimpleString loya(255);
+  
+  SimpleString.print("K", 1);
   return 0;
 }
