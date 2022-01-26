@@ -20,7 +20,8 @@ struct SimpleString
       {
         printf("Hello, thanks for playing along.");
       }
-      buffer = new char[max_size];
+
+      buffer = new char[max_size]; 
       buffer[0] = 0;
     }
 
@@ -34,10 +35,15 @@ struct SimpleString
       const auto x_len = strlen(x);
 
       if (x_len + length + 2 > max_size) return false;
-      std::strncpy(buffer + length, x, max_size - length);
+
+      strncpy(buffer + length, x, max_size - length);
+
       length += x_len;
+
       buffer[length++] = '\n';
+
       buffer[length] = 0;
+
       return true;
     }
 
