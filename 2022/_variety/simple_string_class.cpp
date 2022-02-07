@@ -61,8 +61,15 @@ struct SimpleString
 int main(int argc, char *argv[])
 {
 
-  SimpleString loya(255);
-  
-  SimpleString.print("K", 1);
+  SimpleString string { 115 };
+  string.append_line("Starbucks has good coffee.");
+  string.append_line("Nothing but joy today!");
+  string.print("A: ");
+  string.append_line("Monkey fist!");
+  string.append_line("Snake and crane");
+  string.print("B: ");
+
+  if (!string.append_line("Galatica!")) printf("String was not big enough to append");
+
   return 0;
 }
