@@ -21,7 +21,6 @@ void myFunction(int& byref)
 {
   byref++;
   cout << "Argument passed by reference: " << byref << endl;
-
 }
 
 void myConstFunction(const string& byconstref)
