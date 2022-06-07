@@ -3,6 +3,19 @@
 
 using namespace std;
 
+int returnNumbers(int argc)
+{
+  if (argc == 9)
+  {
+    cout << "You are in the year 9";
+  }
+  else 
+  {
+    cout << "Can't discern.";
+  }
+  return 0;
+};
+
 int main(int argc, char *argv[])
 {
   if (argc != 1)
@@ -14,5 +27,7 @@ int main(int argc, char *argv[])
       cout << argv[i] << '\n';
     }
   }
+
+  returnNumbers(9);
   return 0;
 }
