@@ -17,8 +17,6 @@ Object - store data - cannot be placed in a level.
     1. UStaticMesh
     2. UTexture
 
-
-
 Actor - can be placed in the level and can have a visual representation.
 
   Components derived:

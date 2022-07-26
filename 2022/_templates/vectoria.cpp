@@ -8,11 +8,9 @@ int main(int argc, char *argv[])
 
   // push_back - append to array
 
-
   v.push_back( 2 );
   v.push_back( 3 );
   v.push_back( 5 );
-
 
   std::cout << v[0] << "\n";
   std::cout << v[1] << "\n";

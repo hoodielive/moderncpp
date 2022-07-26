@@ -5,6 +5,7 @@ class Player
 {
   public:
     int speed = 4;
+  
     void Move(int xa, int xb)
     {
       xa += xa * speed;
