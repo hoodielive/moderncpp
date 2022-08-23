@@ -1,4 +1,4 @@
-/* Copyright (C) 1991-2020 Free Software Foundation, Inc.
+/* Copyright (C) 1991-2022 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -61,8 +61,6 @@
 
 #else /* Not NDEBUG.  */
 
-#ifndef _ASSERT_H_DECLS
-#define _ASSERT_H_DECLS
 __BEGIN_DECLS
 
 /* This prints an "Assertion failed" message and aborts.  */
@@ -83,7 +81,6 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 
 
 __END_DECLS
-#endif /* Not _ASSERT_H_DECLS */
 
 /* When possible, define assert so that it does not add extra
    parentheses around EXPR.  Otherwise, those added parentheses would
