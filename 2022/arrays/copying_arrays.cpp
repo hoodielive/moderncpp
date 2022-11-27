@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+
+void printNumbers(int numbers[])
+{
+  for (int number: numbers)
+  {
+    cout << number;
+  }
+}
 int main()
 {
   int first[] = {10, 20, 30};
@@ -17,10 +25,12 @@ int main()
   // Do they both (first and second) contain the same indexed values?
 
   bool areEqual = true;
-  for (int x = 0, x < size(first); x++)
-   if (first[x] != second[x]) 
-     areEqual = false;
-     break;
+  for (int x = 0; x < size(first); x++)
+    if (first[x] != second[x]) 
+    {
+       areEqual = false; break;
+    }
 
   cout << boolalpha << areEqual;
+
 }
