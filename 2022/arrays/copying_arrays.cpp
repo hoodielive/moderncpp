@@ -2,13 +2,14 @@
 using namespace std;
 
 
-void printNumbers(int numbers[])
+void printNumbers(int numbers[], int size)
 {
-  for (int number: numbers)
+  for (int i = 0; i < size; i++)
   {
-    cout << number;
+    cout << numbers[i];
   }
 }
+
 int main()
 {
   int first[] = {10, 20, 30};
@@ -33,4 +34,6 @@ int main()
 
   cout << boolalpha << areEqual;
 
+  int numbers[] = { 40, 50, 60 };
+  printNumbers(numbers, size(numbers));
 }
