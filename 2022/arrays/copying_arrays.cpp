@@ -13,4 +13,14 @@ int main()
 
   for (int number: second)
     cout << number << endl;
+
+  // Do they both (first and second) contain the same indexed values?
+
+  bool areEqual = true;
+  for (int x = 0, x < size(first); x++)
+   if (first[x] != second[x]) 
+     areEqual = false;
+     break;
+
+  cout << boolalpha << areEqual;
 }
