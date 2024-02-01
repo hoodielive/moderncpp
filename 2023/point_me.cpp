@@ -3,6 +3,12 @@
 
 using namespace std;
 
+void afunction()
+{
+  std::cout << "A liking will happen" << std::endl;
+  
+}
+
 int main()
 {
   int a = 92;
@@ -15,6 +21,8 @@ int main()
 
   int *ptr = &var;
   *ptr = 20;
-  int **ptr = &ptr;
-  **ptr = 30;
+
+  afunction();
+ // int **ptr = &ptr;
+ // **ptr = 30;
 }
