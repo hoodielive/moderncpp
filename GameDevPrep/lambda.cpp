@@ -11,7 +11,6 @@ void process(int a, int b, std::function<int(int, int)> operation) {
 
 int main()
 {
-  // [capture(parameters) -> return_type { body }]
   auto add = [](int a, int b) { return a + b; }; 
   int result = add(5, 10);
 
