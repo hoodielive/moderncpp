@@ -1,5 +1,6 @@
 #include <print>
-using namespace std;
+  
+usin namespace std;
 
 // inline functions
 inline int square(int x)
