@@ -8,8 +8,6 @@ using byte_ptr    = unsigned char *;
 using array_t     = int[10];
 using fn_ptr      = void(*)(byte, double);
 
-template<typename T>
-using vec_t       = std::vector<T, custom_allocator<T>>;
 
 template <class T>
 class custom_allocator 
@@ -32,9 +30,10 @@ class custom_allocator
 };
 
 template <typename T>
-
 void func(byte b, double d) { /*... */ }
 
+template<typename T>
+using vec_t       = std::vector<T, custom_allocator<T>>;
 int main()
 {
   byte b{ 42 };
@@ -46,4 +45,5 @@ int main()
   
   fn_ptr = func;
   delete[] pb;
+  print("Forever");
 }
